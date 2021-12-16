@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montagu Slab';
+}
+li, a, button {
+    font-family: "Montagu Slab";
+    font-weight: 250;
+    font-size: 16px;
+    font-weight: 650;
+    color: rgb(62, 68, 85);
+    text-decoration:overline;
+    letter-spacing: 2px;
+}
+header {
+    background-color: rgba(202, 165, 62, 0.6);
+    max-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: fixed;
+    align-items: center;
+    padding: 7px 10%;
+}
+.logo {
+    cursor: pointer;
+    max-width: 40%;
+    margin-left: -50px;
+}
+.nav__links {
+    margin-right: -50px;
+    list-style:circle;
+}
+.nav__links li {
+    display: inline-block;
+    padding: 2px 19px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: rgb(1, 1, 2);
+}
+body{
+	height: 100vh;
+	width: 100%;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(46, 48, 197, 0.4);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.index-banner{
+    width: 100%;
+    height: 40vh;
+    background: url(baggrund.svg);
+    border-bottom:transparent;
+    background-repeat: no-repeat;
+    background-size:auto auto;
+    background-position: center;
+
+}
+.container{
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(baggrund3.svg) no-repeat center;
+	background-size: cover;
+	filter: blur(10px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+.img{
+    border-radius: 50%;
+    max-width: 50%;
+    max-height: 40vh;
+}
+.logo {
+    cursor: pointer;
+    max-width: 40%;
+    margin-left: -50px;
+}
+.left{
+	background: url(Pictures/kontakt.jpg) no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgba(223, 182, 69, 0.7);
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+
+@media screen and (max-width: 660px){
+	html, body{
+        height: 100%;
+    }
+    .nav__links li {
+        display: inline-block;
+        padding: 2px 12px;
+    }
+    body {
+      background-color: rgba(105, 104, 37, 1);
+    }
+    header {
+        width: 100%;
+        padding: 2px 10%;
+        letter-spacing: 0px;
+    }
+    .logo {
+        cursor: pointer;
+        max-width: 35%;
+        margin-right: 24px;
+        margin-left: -30px;
+    }
+    img{
+        border-radius: 50%;
+        max-width: 100%;
+        max-height: 40vh;
+    }
+    li, a, button {
+        font-size: 12px;
+        letter-spacing: 0px;
+    }
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
